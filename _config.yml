@@ -36,7 +36,7 @@ prose:
       - name: "layout"
         field:
           element: "hidden"
-          value: "blog"
+          value: "project"
       - name: "title"
         field:
           element: "text"
