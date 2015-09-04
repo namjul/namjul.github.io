@@ -8,7 +8,7 @@
               <a href="#" class="btn block">Info</a>
             </h3>
           </li>
-          <li><span class="h5 btn block">cpenhard (at) yahoo (dot) fr</span></li>
+          <li><span class="h5 btn block">{{site.email}}</span></li>
           <li><a href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" class="h5 btn block">Subscribe to RSS</a></li>
         </ul>
       </div>
@@ -20,9 +20,7 @@
             </h3>
           </li>
           <li>
-            <p class="px2 ">
-              Write an awesome description for your new site here.
-            </p>
+            <p class="px2 ">{{site.description}}</p>
           </li>
         </ul>
       </div>
