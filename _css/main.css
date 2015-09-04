@@ -1,0 +1,13 @@
+@import 'basscss';
+
+body {
+  margin: 10px;
+}
+
+.font-yanone {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}  
+
+.post-content {
+  margin: 0 var(--space-1);
+}

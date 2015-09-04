@@ -3,13 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "npm run build:jekyll && npm run build:css",
-    "build:jekyll": "jekyll build && npm run css",
-    "build:css": "npm run css && npm run minify:css",
-    "css": "cssnext css/main.css _site/css/main.css",
-    "minify:css": "cssnext -c css/main.css _site/css/main.min.css",
-    "watch:jekyll": "chokidar 'index.html' '_includes/*.html' '_projects/*' '_layouts/*.html' '_posts/*' -c 'npm run build:jekyll && browser-sync reload'",
-    "watch:css": "chokidar 'css/*' -c 'npm run css && browser-sync reload'",
+    "build": "jekyll build && npm run css",
+    "css": "cssnext _css/main.css _site/css/main.css",
+    "postcss": "cp _site/css/main.css css/main.css",
+    "watch:jekyll": "chokidar 'index.html' '_includes/*.html' '_projects/*' '_layouts/*.html' '_posts/*' -c 'npm run build && browser-sync reload'",
+    "watch:css": "chokidar '_css/*' -c 'npm run css && browser-sync reload'",
     "serve": "browser-sync start --server _site",
     "start": "npm run build -s && parallelshell \"npm run serve -s\" \"npm run watch:jekyll -s\" \"npm run watch:css -s\""
   },
