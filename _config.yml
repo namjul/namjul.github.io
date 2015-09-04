@@ -28,8 +28,22 @@ prose:
     - /_layouts
     - /_includes
   metadata:
-    _project:
-      - name: "layout"
+    _projects:
+      - name: "category"
         field:
           element: "hidden"
           value: "project"
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "blog"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "cover"
+        field:
+          element: "text"
+          label: "Cover image"
+          value: ""
