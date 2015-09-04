@@ -8,6 +8,7 @@ body {
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }  
 
+.post-header,
 .post-content {
   margin: 0 var(--space-1);
 }
