@@ -15,3 +15,21 @@ exclude: ["node_modules", "_css", "package.json"]
 collections:
   projects:
     output: true
+
+# Prose settings
+prose:
+  rooturl: '_projects'
+  siteurl: 'http://christophepenhard.com/'
+  relativeLinks: 'http://christophepenhard.com/links.jsonp'
+  media: 'media'
+  ignore:
+    - index.md
+    - _config.yml
+    - /_layouts
+    - /_includes
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "project"
