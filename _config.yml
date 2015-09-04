@@ -23,10 +23,16 @@ prose:
   relativeLinks: 'http://christophepenhard.com/links.jsonp'
   media: 'media'
   ignore:
-    - index.md
+    - index.html
     - _config.yml
     - /_layouts
+    - /_css
+    - /css
     - /_includes
+    - package.json
+    - CNAME
+    - links.jsonp
+    - feed.xml
   metadata:
     _projects:
       - name: "category"
