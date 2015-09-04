@@ -1,0 +1,6 @@
+name: Christophe Penhard
+markdown: kramdown
+exclude: ["node_modules", "css", "package.json"]
+collections:
+  projects:
+    output: true

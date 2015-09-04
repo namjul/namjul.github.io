@@ -1,0 +1,28 @@
+{
+  "name": "christophpenhard",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "npm run build:jekyll && npm run build:css",
+    "build:jekyll": "jekyll build && npm run css",
+    "build:css": "npm run css && npm run minify:css",
+    "css": "cssnext css/main.css _site/css/main.css",
+    "minify:css": "cssnext -c css/main.css _site/css/main.min.css",
+    "watch:jekyll": "chokidar 'index.html' '_includes/*.html' '_projects/*' '_layouts/*.html' '_posts/*' -c 'npm run build:jekyll && browser-sync reload'",
+    "watch:css": "chokidar 'css/*' -c 'npm run css && browser-sync reload'",
+    "serve": "browser-sync start --server _site",
+    "start": "npm run build -s && parallelshell \"npm run serve -s\" \"npm run watch:jekyll -s\" \"npm run watch:css -s\""
+  },
+  "author": "Samuel Hobl",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "chokidar-cli": "^1.0.1",
+    "cssnext": "^1.8.4",
+    "http-server": "^0.8.0",
+    "parallelshell": "^2.0.0"
+  },
+  "dependencies": {
+    "basscss": "^7.0.4"
+  }
+}

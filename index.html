@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div class="clearfix">
+  {% for project in site.projects %}
+    <div class="col sm-col-12 md-col-6 px2 mb3">
+      <a class="block p2 navy" href="{{ project.url | prepend: project.baseurl }}">
+        <img src="{{ project.cover }}" class="mb2" />
+        <h1 class="btn h2 mt0">{{ project.title }}</h1>
+      </a>
+    </div>
+  {% endfor %}
+</div>

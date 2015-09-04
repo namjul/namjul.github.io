@@ -1,0 +1,14 @@
+<header class="site-header">
+  <nav class="clearfix white bg-lighten-2">
+    <div class="sm-col">
+      <a class="btn py2 logo" href="/">Christophe Penhard</a>
+    </div>
+    <div class="sm-col-right">
+      {% for page in site.pages %}
+        {% if page.title %}
+          <a class="btn py2" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </nav>
+</header>
