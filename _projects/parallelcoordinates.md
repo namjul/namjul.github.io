@@ -5,6 +5,5 @@ projectUrl: http://parallel-coordinates-app.herokuapp.com/
 year: 2011
 ---
 
-I built this data visualistion using parallel coordinates
-during my time at the FH Technikum Vienna.
-Used technologies are spine.js and coffeescript.
+This is a data visualisation tool using parallel coordinates.
+Built with spine.js and coffeescript.
