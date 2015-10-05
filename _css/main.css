@@ -4,19 +4,6 @@ body {
   margin: 10px;
 }
 
-.font-yanone {
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-}  
-
-.post-header,
-.post-content {
-  margin: 0 var(--space-1);
-}
-
-.post-content {
-  margin-bottom: 10px;
-}
-
 h1 small, 
 h2 small, 
 h3 small, 
