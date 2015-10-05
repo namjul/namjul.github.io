@@ -3,10 +3,14 @@ layout: default
 ---
 
 <div class="clearfix">
-  {% for project in site.projects %}
-    <div class="col sm-col-12 md-col-6 px2 mb3">
+  {% assign projects= site.projects | sort: 'year' %}
+  {% for project in projects reversed %}
+    <div class="col sm-col-12">
       <a class="block p2 navy" href="{{ project.url | prepend: project.baseurl }}">
-        <h1 class="btn h2 mt0">{{ project.title }}</h1>
+        {{ project.title }}
+        <small>
+          {{project.client}}, {{project.title}}, {{project.year}}
+        </small>
       </a>
     </div>
   {% endfor %}

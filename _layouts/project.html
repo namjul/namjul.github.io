@@ -4,11 +4,23 @@ layout: default
 <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
+    <h2 class="post-title">
+      {{ page.title }}
+      <small class="block h5">
+        {% if page.client %}
+        {{page.client}}, 
+        {% endif %}
+        {{page.title}}, {{page.year}}
+      </small>
+    </h2>
   </header>
 
   <article class="post-content">
     {{ content }}
+
+    <a target="_blank" href="{{ page.projectUrl | prepend: page.baseurl }}">
+      {{page.projectUrl}}
+    </a>
   </article>
 
 </div>

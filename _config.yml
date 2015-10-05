@@ -3,8 +3,10 @@ title: Samuel Hobl
 name: Samuel Hobl
 email: "samuel.hobl (at) gmail (dot) com" 
 description: > # this means to ignore newlines until "baseurl:"
-  This site is about me and maybe you. 
-  At least in an other parallel universe / simulation for sure.
+  Hi, my name is Samuel Hobl, I am a Web Developer based in Vienna.
+  I enjoy crafting things and feel currently drawn to the following the methodes/technologies:
+  node.js, ES6, NPM, webpack, virtualDOM, react, flux, FRP, modulares CSS. 
+  If you want to get in touch with me, feel free to drop an email.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://namjul.github.io/" # the base hostname & protocol for your site
 
